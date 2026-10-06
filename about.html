@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Habitat Meets Form</title>
+  <meta name="description" content="Habitat Meets Form is an independent editorial covering interior design, architecture, materials, and the ideas that shape how we live. Meet the team and our editorial approach.">
+  <meta name="author" content="Habitat Meets Form Editorial">
+  <link rel="canonical" href="https://habitatmeetsform.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Habitat Meets Form">
+  <meta property="og:description" content="Independent editorial on interior design and architecture. Meet the team and our editorial approach.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://habitatmeetsform.com/about.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Habitat Meets Form",
+    "url": "https://habitatmeetsform.com/about.html",
+    "description": "Independent editorial on interior design and architecture.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Habitat Meets Form",
+      "description": "An independent publication about the built environment — interior design, architecture, materials, and the ideas that shape how we live.",
+      "foundingDate": "2025"
+    }
+  }
+  </script>
+  <style>
+    /* ---- RESET & BASE (same design system as homepage) ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #faf9f7;
+      --paper-warm: #f3f0eb;
+      --border: #e0ddd8;
+      --accent: #b85c38;
+      --accent-soft: #d9c7b8;
+      --muted: #6b6b6b;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 780px;
+      --radius: 4px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 1.8rem; margin-bottom: 0.75rem; }
+    h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-soft);
+      padding-bottom: 2px;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---- LAYOUT ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---- HEADER (same as homepage) ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background: var(--ink);
+      color: var(--paper);
+      text-align: center;
+      line-height: 28px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 50%;
+    }
+
+    .logo span {
+      font-weight: 400;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---- ABOUT PAGE SPECIFIC ---- */
+    .about-hero {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      max-width: 800px;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-hero .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 640px;
+      font-family: var(--font-sans);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 3.5rem;
+      padding-bottom: 2rem;
+    }
+
+    .about-content {
+      max-width: var(--content-width);
+    }
+
+    .about-content h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .about-content p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .about-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+    }
+
+    .about-content ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.05rem;
+      color: var(--ink-soft);
+    }
+
+    .about-content ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .about-content blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: var(--ink);
+      font-style: italic;
+    }
+
+    .about-content blockquote cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-style: normal;
+      font-family: var(--font-sans);
+      color: var(--muted);
+    }
+
+    .about-image {
+      margin: 2rem 0;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: var(--radius);
+    }
+
+    .about-image figcaption {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      text-align: right;
+      font-style: italic;
+    }
+
+    /* Sidebar / Values */
+    .about-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .values-box {
+      background: var(--paper-warm);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+    }
+
+    .values-box h3 {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      color: var(--ink);
+    }
+
+    .values-list {
+      list-style: none;
+    }
+
+    .values-list li {
+      margin-bottom: 1.25rem;
+    }
+
+    .values-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .values-list strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-bottom: 0.2rem;
+    }
+
+    .values-list p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* Team section */
+    .team-section {
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .team-section h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .team-section .intro {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      max-width: 640px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .team-card {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 1.5rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .team-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+
+    .team-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+
+    .team-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .team-card .role {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .team-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    /* Editorial promise */
+    .promise-section {
+      margin-top: 4rem;
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .promise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+    }
+
+    .promise-item h4 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .promise-item p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* ---- FOOTER (same as homepage) ---- */
+    .site-footer {
+      background: var(--ink);
+      color: #ccc;
+      padding: 3rem 1.5rem 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .footer-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-brand .logo {
+      color: var(--paper);
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .footer-col h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--paper);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .footer-col a:hover {
+      color: var(--paper);
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .footer-bottom a {
+      color: #aaa;
+      margin-left: 1rem;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr 280px;
+        gap: 2.5rem;
+      }
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .promise-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .about-hero h1 {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-sidebar {
+        order: -1;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .promise-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      .header-inner {
+        padding: 0.8rem 1rem;
+      }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--paper);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+      }
+      .main-nav.open {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .about-hero {
+        padding: 2rem 0 1.5rem;
+      }
+      .about-hero h1 {
+        font-size: 1.8rem;
+      }
+      .about-hero .subhead {
+        font-size: 1rem;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+      .container {
+        padding: 0 1rem;
+      }
+      .about-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Habitat Meets Form home">
+        <span class="logo-mark">H</span>
+        <span>Habitat Meets Form</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button>
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT HERO ===== -->
+  <div class="container">
+    <div class="about-hero">
+      <span class="category-tag" style="border-bottom-color: var(--accent-soft);">About Us</span>
+      <h1>We write about the spaces we inhabit — and the ideas that shape them.</h1>
+      <p class="subhead">Habitat Meets Form is an independent editorial platform exploring interior design, architecture, materials, and the quiet details that make a house feel like a home.</p>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- PRIMARY COLUMN -->
+      <main class="about-content">
+
+        <h2>Our Story</h2>
+        <p>Habitat Meets Form began with a simple frustration: too much design writing was either surface-level trend reporting or impenetrable academic theory. We wanted something in between — thoughtful, practical, and rooted in the lived experience of spaces.</p>
+        <p>Founded in 2025 as an independent publication, we've built a small editorial team of architects, designers, and journalists who care deeply about the built environment. We publish in-depth guides, case studies, and essays that help both professionals and enthusiasts understand not just <em>what</em> makes good design, but <em>why</em> it matters.</p>
+
+        <figure class="about-image">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=400&fit=crop" alt="Open-plan living space with concrete walls, warm timber floors, and abundant natural light">
+          <figcaption>Light, material, and proportion — the three constants in every project we cover.</figcaption>
+        </figure>
+
+        <h2>What We Cover</h2>
+        <p>Our editorial scope spans the full spectrum of the built environment, from the scale of a doorknob to the scale of a city block. Recurring themes include:</p>
+        <ul>
+          <li><strong>Interior Design</strong> — colour, texture, furniture, and the psychology of domestic space.</li>
+          <li><strong>Architecture</strong> — residential projects, adaptive reuse, and the future of housing.</li>
+          <li><strong>Materials</strong> — stone, timber, clay, concrete, and the craft of building well.</li>
+          <li><strong>Space Planning</strong> — circulation, light, storage, and the invisible logic of good floor plans.</li>
+          <li><strong>Sustainable Design</strong> — passive strategies, low-carbon materials, and resilient homes.</li>
+          <li><strong>Renovation</strong> — realistic timelines, budgets, and lessons from real projects.</li>
+        </ul>
+
+        <blockquote>
+          "Good design is not about decoration. It's about asking better questions — about how we live, what we value, and what we leave behind."
+          <cite>— Elena Marchetti, Editor-in-Chief</cite>
+        </blockquote>
+
+        <h2>Our Approach</h2>
+        <p>We believe design writing should be rigorous but readable. Every article we publish is grounded in research, interviews with practitioners, and a healthy skepticism of passing trends. We don't chase clicks; we chase clarity.</p>
+        <p>We are independent and reader-supported. We don't accept sponsored content disguised as editorial, and we clearly label any affiliate or partner relationships. When we recommend a material, a product, or a method, it's because we've done the work to understand it.</p>
+
+      </main>
+
+      <!-- SIDEBAR / VALUES -->
+      <aside class="about-sidebar" role="complementary">
+
+        <div class="values-box">
+          <h3>What We Stand For</h3>
+          <ul class="values-list">
+            <li>
+              <strong>Independence</strong>
+              <p>No sponsored content. No pay-to-play reviews. Our only allegiance is to our readers.</p>
+            </li>
+            <li>
+              <strong>Depth over speed</strong>
+              <p>We'd rather publish one carefully researched piece than five shallow ones.</p>
+            </li>
+            <li>
+              <strong>Practical beauty</strong>
+              <p>Design should work as well as it looks. We celebrate both.</p>
+            </li>
+            <li>
+              <strong>Longevity</strong>
+              <p>We write for the archive, not the algorithm. Good ideas don't expire.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="values-box" style="background: var(--paper);">
+          <h3>Editorial Independence</h3>
+          <p style="font-size:0.9rem; margin-bottom:1rem;">Habitat Meets Form is entirely independent. We are not owned by a media conglomerate, a furniture brand, or an advertising agency.</p>
+          <p style="font-size:0.9rem; margin-bottom:0;">Our editorial team retains full control over what we publish. Any commercial partnerships are clearly disclosed and never influence our coverage.</p>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <!-- ===== TEAM SECTION ===== -->
+    <section class="team-section">
+      <h2>The Team</h2>
+      <p class="intro">A small group of writers, designers, and researchers who care about the built environment.</p>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">EM</div>
+          <h4>Elena Marchetti</h4>
+          <div class="role">Editor-in-Chief</div>
+          <p>Elena has spent 15 years writing about architecture and interiors. She believes good design is about asking better questions — not chasing trends.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">JR</div>
+          <h4>James Rutherford</h4>
+          <div class="role">Architecture Editor</div>
+          <p>James is a registered architect and former practitioner. He leads our coverage of residential architecture, adaptive reuse, and urban housing.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">SC</div>
+          <h4>Sofia Chen</h4>
+          <div class="role">Interiors & Materials</div>
+          <p>Sofia writes about interior design, textiles, and the sensory experience of materials. She has a particular weakness for travertine and linen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDITORIAL PROMISE ===== -->
+    <section class="promise-section">
+      <div class="promise-grid">
+        <div class="promise-item">
+          <h4>Rigorous Research</h4>
+          <p>Every article is fact-checked and grounded in primary sources — interviews, site visits, and technical literature.</p>
+        </div>
+        <div class="promise-item">
+          <h4>No Hidden Agendas</h4>
+          <p>We don't accept payment for coverage. Sponsored content, if it ever appears, will be clearly labelled as such.</p>
+        </div>
+        <div class="promise-item">
+          <h4>Reader-First</h4>
+          <p>We write for people who want to understand design deeply — not for search engines or advertisers.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark" style="background:var(--paper);color:var(--ink);">H</span><span style="color:var(--paper);">Habitat Meets Form</span></div>
+        <p>An independent publication about the built environment — interior design, architecture, materials, and the ideas that shape how we live.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Interior Design</a></li>
+          <li><a href="index.html">Architecture</a></li>
+          <li><a href="index.html">Materials</a></li>
+          <li><a href="index.html">Lighting</a></li>
+          <li><a href="index.html">Space Planning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Habitat Meets Form. All rights reserved.</span>
+      <span>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT (mobile menu only) ===== -->
+  <script>
+    // ---- CLOSE MOBILE MENU ON LINK CLICK ----
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.main-nav').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

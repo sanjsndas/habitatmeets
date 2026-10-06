@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Habitat Meets Form</title>
+  <meta name="description" content="Privacy Policy for Habitat Meets Form. How we collect, use, and protect your personal information.">
+  <meta name="author" content="Habitat Meets Form Editorial">
+  <link rel="canonical" href="https://habitatmeetsform.com/privacy.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — Habitat Meets Form">
+  <meta property="og:description" content="How we collect, use, and protect your personal information.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta property="og:url" content="https://habitatmeetsform.com/privacy.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ---- RESET & BASE (same as contact) ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #faf9f7;
+      --paper-warm: #f3f0eb;
+      --border: #e0ddd8;
+      --accent: #b85c38;
+      --accent-soft: #d9c7b8;
+      --muted: #6b6b6b;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 780px;
+      --radius: 4px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ---- TYPOGRAPHY ---- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.8rem; margin-bottom: 0.75rem; margin-top: 2rem; }
+    h3 { font-size: 1.35rem; margin-bottom: 0.5rem; margin-top: 1.5rem; }
+    h4 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: var(--ink-soft);
+    }
+
+    ul, ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+      font-size: 1rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-soft);
+      padding-bottom: 2px;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---- LAYOUT ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---- HEADER ---- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background: var(--ink);
+      color: var(--paper);
+      text-align: center;
+      line-height: 28px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 50%;
+    }
+
+    .logo span {
+      font-weight: 400;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---- SEARCH BAR ---- */
+    .search-bar {
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper-warm);
+    }
+
+    .search-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-inner input {
+      flex: 1;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      background: var(--paper);
+      font-family: var(--font-sans);
+    }
+
+    .search-inner input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .search-inner button {
+      padding: 0.6rem 1.2rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: none;
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      transition: background 0.2s;
+    }
+
+    .search-inner button:hover {
+      background: var(--accent);
+    }
+
+    /* ---- CATEGORY FILTERS ---- */
+    .category-filters {
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--paper);
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+
+    .category-filters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category-filters .filter-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .filter-btn {
+      padding: 0.4rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: transparent;
+      font-size: 0.78rem;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      color: var(--ink-soft);
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+    }
+
+    /* ---- PRIVACY PAGE SPECIFIC ---- */
+    .privacy-header {
+      padding: 3rem 0 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .privacy-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-header p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .privacy-content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding-bottom: 4rem;
+    }
+
+    .privacy-content .last-updated {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    .privacy-content h2 {
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .privacy-content p {
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .privacy-content ul {
+      margin-bottom: 1.2rem;
+    }
+
+    .privacy-content li {
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .privacy-content .highlight-box {
+      background: var(--paper-warm);
+      border-left: 3px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .privacy-content .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .privacy-content .contact-ref {
+      background: var(--paper-warm);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+
+    .privacy-content .contact-ref p {
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-content .contact-ref a {
+      font-weight: 500;
+      border-bottom: 1px solid var(--accent-soft);
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+      background: var(--ink);
+      color: #ccc;
+      padding: 3rem 1.5rem 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-brand .logo {
+      color: var(--paper);
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .footer-col h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--paper);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .footer-col a:hover {
+      color: var(--paper);
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .footer-bottom a {
+      color: #aaa;
+      margin-left: 1rem;
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 1024px) {
+      .privacy-content {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      .header-inner {
+        padding: 0.8rem 1rem;
+      }
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--paper);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+      }
+      .main-nav.open {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .privacy-header h1 {
+        font-size: 2rem;
+      }
+      .privacy-header p {
+        font-size: 1rem;
+      }
+      .privacy-content h2 {
+        font-size: 1.3rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+      }
+      .container {
+        padding: 0 1rem;
+      }
+    }
+
+    /* ---- UTILITY ---- */
+    .hidden { display: none !important; }
+    .text-center { text-align: center; }
+    .mt-1 { margin-top: 0.5rem; }
+    .mt-2 { margin-top: 1rem; }
+    .mb-1 { margin-bottom: 0.5rem; }
+    .mb-2 { margin-bottom: 1rem; }
+    .mb-3 { margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Habitat Meets Form home">
+        <span class="logo-mark">H</span>
+        <span>Habitat Meets Form</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button>
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== SEARCH (consistent) ===== -->
+  <div class="search-bar">
+    <div class="search-inner">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, guides…" aria-label="Search articles">
+      <button onclick="performSearch()">Search</button>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORY FILTERS (consistent) ===== -->
+  <div class="category-filters">
+    <div class="filter-inner" id="filterContainer">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="interior">Interior Design</button>
+      <button class="filter-btn" data-category="architecture">Architecture</button>
+      <button class="filter-btn" data-category="home">Home Design</button>
+      <button class="filter-btn" data-category="materials">Materials</button>
+      <button class="filter-btn" data-category="space">Space Planning</button>
+      <button class="filter-btn" data-category="lighting">Lighting</button>
+      <button class="filter-btn" data-category="furniture">Furniture</button>
+      <button class="filter-btn" data-category="modern">Modern Homes</button>
+      <button class="filter-btn" data-category="sustainable">Sustainable Design</button>
+      <button class="filter-btn" data-category="small">Small Spaces</button>
+      <button class="filter-btn" data-category="renovation">Renovation</button>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="container">
+
+    <!-- PRIVACY HEADER -->
+    <section class="privacy-header">
+      <h1>Privacy Policy</h1>
+      <p>Your privacy matters. This policy explains how Habitat Meets Form collects, uses, and safeguards your information.</p>
+    </section>
+
+    <!-- PRIVACY CONTENT -->
+    <div class="privacy-content">
+
+      <p class="last-updated">Last updated: January 15, 2025</p>
+
+      <p>Habitat Meets Form ("we," "us," or "our") operates the website habitatmeetsform.com (the "Site"). This Privacy Policy describes how we collect, use, disclose, and protect information that we gather from visitors to our Site. By using the Site, you agree to the practices described in this policy.</p>
+
+      <div class="highlight-box">
+        <p><strong>In short:</strong> We collect minimal personal data. We use it only to respond to inquiries, improve our editorial content, and understand how our audience engages with the Site. We do not sell your data.</p>
+      </div>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>Information you provide voluntarily</h3>
+      <p>We collect personal information that you choose to share with us, including:</p>
+      <ul>
+        <li><strong>Contact form data:</strong> When you use our contact form, we collect your name, email address, subject category, and message content.</li>
+        <li><strong>Email correspondence:</strong> If you email us directly, we retain the content of your message, your email address, and any attachments.</li>
+        <li><strong>Newsletter subscriptions:</strong> If you subscribe to our newsletter, we collect your email address and, optionally, your first name.</li>
+      </ul>
+
+      <h3>Information collected automatically</h3>
+      <p>When you visit the Site, we may automatically collect certain technical information, including:</p>
+      <ul>
+        <li>IP address and approximate geographic location (country/city level)</li>
+        <li>Browser type, operating system, and device type</li>
+        <li>Pages visited, time spent on pages, and referring URLs</li>
+        <li>Interaction data such as clicks, scroll depth, and search queries within the Site</li>
+      </ul>
+      <p>This information is collected using cookies and similar technologies. See our <a href="cookies.html">Cookies Policy</a> for details.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li><strong>Communication:</strong> To respond to your inquiries, feedback, or story pitches.</li>
+        <li><strong>Editorial improvement:</strong> To understand which topics and articles resonate with our audience, so we can produce more relevant content.</li>
+        <li><strong>Site operation:</strong> To maintain, secure, and improve the functionality of the Site.</li>
+        <li><strong>Newsletter delivery:</strong> To send you editorial updates and curated content (only if you have opted in).</li>
+        <li><strong>Legal compliance:</strong> To comply with applicable laws and regulations.</li>
+      </ul>
+      <p>We do not use your personal information for automated decision-making or profiling that produces legal or similarly significant effects.</p>
+
+      <h2>3. Legal Basis for Processing (GDPR)</h2>
+      <p>If you are located in the European Economic Area (EEA), we process your personal data based on the following legal grounds:</p>
+      <ul>
+        <li><strong>Consent:</strong> When you voluntarily submit a contact form or subscribe to our newsletter.</li>
+        <li><strong>Legitimate interests:</strong> To improve our Site, understand reader preferences, and ensure security.</li>
+        <li><strong>Legal obligation:</strong> Where we are required to retain data for legal compliance.</li>
+      </ul>
+
+      <h2>4. Cookies and Tracking Technologies</h2>
+      <p>We use cookies and similar technologies to enhance your browsing experience, analyze site traffic, and remember your preferences. Cookies are small text files stored on your device.</p>
+      <p>Types of cookies we use:</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> Required for the Site to function properly.</li>
+        <li><strong>Analytics cookies:</strong> Help us understand how visitors interact with the Site (e.g., Google Analytics).</li>
+        <li><strong>Preference cookies:</strong> Remember settings such as your preferred category filter.</li>
+      </ul>
+      <p>You can control and delete cookies through your browser settings. Disabling certain cookies may affect the functionality of the Site. For more details, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+      <h2>5. How We Share Your Information</h2>
+      <p>We do not sell, rent, or trade your personal information to third parties. We may share your information only in the following limited circumstances:</p>
+      <ul>
+        <li><strong>Service providers:</strong> Trusted third-party vendors who assist with site operations, email delivery, or analytics (e.g., Google Analytics, Mailchimp). These providers are contractually obligated to protect your data.</li>
+        <li><strong>Legal requirements:</strong> If required by law, court order, or governmental request, we may disclose your information.</li>
+        <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the business. We will notify you via email or a prominent notice on the Site of any such change.</li>
+      </ul>
+
+      <h2>6. Data Retention</h2>
+      <p>We retain personal information only for as long as necessary to fulfill the purposes described in this policy:</p>
+      <ul>
+        <li><strong>Contact form submissions:</strong> Retained for 12 months after resolution of the inquiry, unless a longer period is required for legal reasons.</li>
+        <li><strong>Newsletter subscriptions:</strong> Retained until you unsubscribe, after which your email is removed from our active list within 30 days.</li>
+        <li><strong>Analytics data:</strong> Retained in aggregate, anonymized form indefinitely for statistical purposes.</li>
+      </ul>
+
+      <h2>7. Data Security</h2>
+      <p>We take reasonable technical and organizational measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+      <ul>
+        <li>SSL/TLS encryption for data transmission</li>
+        <li>Regular security audits and updates</li>
+        <li>Restricted access to personal data on a need-to-know basis</li>
+      </ul>
+      <p>However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+      <h2>8. Your Rights</h2>
+      <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+      <ul>
+        <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+        <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+        <li><strong>Deletion:</strong> Request deletion of your personal data, subject to legal retention requirements.</li>
+        <li><strong>Restriction:</strong> Request that we limit processing of your data.</li>
+        <li><strong>Portability:</strong> Request transfer of your data to another organization.</li>
+        <li><strong>Objection:</strong> Object to processing based on legitimate interests.</li>
+        <li><strong>Withdraw consent:</strong> Withdraw consent at any time where processing is based on consent.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@habitatmeetsform.com">privacy@habitatmeetsform.com</a>. We will respond within 30 days.</p>
+
+      <h2>9. International Data Transfers</h2>
+      <p>Habitat Meets Form is based in the United States. If you are accessing the Site from outside the U.S., please be aware that your information may be transferred to, stored, and processed in the U.S. We take steps to ensure that your data receives adequate protection in accordance with applicable laws.</p>
+
+      <h2>10. Children's Privacy</h2>
+      <p>The Site is not directed to individuals under the age of 16. We do not knowingly collect personal information from children. If we become aware that a child under 16 has provided us with personal data, we will take steps to delete that information promptly. If you believe a child has provided us with personal data, please contact us.</p>
+
+      <h2>11. Third-Party Links</h2>
+      <p>The Site may contain links to third-party websites, including social media platforms and external resources. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
+
+      <h2>12. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make material changes, we will notify you by:</p>
+      <ul>
+        <li>Posting a prominent notice on the Site</li>
+        <li>Updating the "Last updated" date at the top of this page</li>
+        <li>Sending an email notification to subscribers (if applicable)</li>
+      </ul>
+      <p>We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
+
+      <h2>13. Contact Us</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+
+      <div class="contact-ref">
+        <p><strong>Habitat Meets Form — Privacy Team</strong></p>
+        <p>Email: <a href="mailto:privacy@habitatmeetsform.com">privacy@habitatmeetsform.com</a></p>
+        <p>Mail: 1401 Walnut Street, Suite 210, Philadelphia, PA 19102, USA</p>
+        <p style="margin-bottom: 0; margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted);">We aim to respond to all privacy-related inquiries within 5 business days.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark" style="background:var(--paper);color:var(--ink);">H</span><span style="color:var(--paper);">Habitat Meets Form</span></div>
+        <p>An independent publication about the built environment — interior design, architecture, materials, and the ideas that shape how we live.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#interiors">Interior Design</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#lighting">Lighting</a></li>
+          <li><a href="#space">Space Planning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Habitat Meets Form. All rights reserved.</span>
+      <span>
+        <a href="privacy.html">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ---- SEARCH FUNCTIONALITY (placeholder, consistent) ----
+    function performSearch() {
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      console.log('Search on privacy page:', query);
+    }
+
+    // Search on Enter key
+    document.getElementById('searchInput').addEventListener('keyup', function(e) {
+      if (e.key === 'Enter') performSearch();
+    });
+
+    // ---- NAVIGATION SMOOTH SCROLL (placeholder) ----
+    document.querySelectorAll('.main-nav a, .footer-col a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    // ---- CLOSE MOBILE MENU ON LINK CLICK ----
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.main-nav').classList.remove('open');
+      });
+    });
+
+    // ---- CATEGORY FILTERS (dummy, consistent) ----
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
